@@ -840,7 +840,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_native_web_dist_cjs_exports_AppRegistry__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_native_web_dist_cjs_exports_AppRegistry__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _app_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../app.json */ "./app.json");
 var _app_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../app.json */ "./app.json", 1);
-var _jsxFileName = "C:\\Users\\Jay-C\\Documents\\apps\\nslive\\pages\\_document.js";
+var _jsxFileName = "C:\\Users\\Usuario\\Documents\\nslive\\pages\\_document.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 

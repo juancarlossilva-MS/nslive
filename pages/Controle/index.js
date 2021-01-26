@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 
 const PrivatePage = ({ user }) => (
   <div>
+    <button>FACEBOOK</button>
     <h1>Hello {user.email}</h1>
     <p>Secret things live here...</p>
   </div>

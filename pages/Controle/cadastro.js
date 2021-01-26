@@ -77,26 +77,30 @@ const onChangeHandler = event => {
       setLastName(value);
     } 
   };
-  const handlerSubmit = (event) =>{
+  const handlerSubmit = async(event) =>{
     event.preventDefault();
+
     fire.auth().createUserWithEmailAndPassword(email, password)
     .then((user) => {
         var user2 = fire.auth().currentUser;
 
         console.log('here')
         user2.updateProfile({
-            displayName: firstName + " "+lastName,
-            photoURL: "https://example.com/jane-q-user/profile.jpg"
-          }).then(function() {
+            displayName: firstName + " "+lastName
+          }).then(async(e) =>{
             console.log('here2')
-             router.push("/Controle");
+            const response = await fetch("../api/sessions", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email, password })
+            });
+            console.log(response);
+            if (response.ok) {
+              return router.push("/Controle");
+            }
           }).catch(function(error) {
             console.log(error)
           });
-
-          
-
-          
     })
     .catch((error) => {
         console.log(error.message);
